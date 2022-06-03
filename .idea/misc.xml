@@ -5,8 +5,10 @@
       <map>
         <entry key="..\:/Users/hp/ELALOUI_YOUSSEF_TDI201_CC2/app/src/main/res/drawable/shape1.xml" value="0.1685" />
         <entry key="..\:/Users/hp/ELALOUI_YOUSSEF_TDI201_CC2/app/src/main/res/layout/activity_add_sactivity.xml" value="0.25" />
+        <entry key="..\:/Users/hp/ELALOUI_YOUSSEF_TDI201_CC2/app/src/main/res/layout/activity_list_sactivity.xml" value="0.25" />
         <entry key="..\:/Users/hp/ELALOUI_YOUSSEF_TDI201_CC2/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/hp/ELALOUI_YOUSSEF_TDI201_CC2/app/src/main/res/layout/activity_update_sactivity.xml" value="0.25" />
+        <entry key="..\:/Users/hp/ELALOUI_YOUSSEF_TDI201_CC2/app/src/main/res/layout/item.xml" value="0.25" />
       </map>
     </option>
   </component>

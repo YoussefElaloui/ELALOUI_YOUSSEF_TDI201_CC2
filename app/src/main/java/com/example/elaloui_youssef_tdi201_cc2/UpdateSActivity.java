@@ -64,7 +64,7 @@ public class UpdateSActivity extends AppCompatActivity {
                 a.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Societe s=new Societe(ss.get(cmb.getId()).getId(),nom.getText().toString(),sec.getText().toString(),Integer.valueOf(nb.getText().toString()));
+                        Societe s=new Societe(ss.get(cmb.getSelectedItemPosition()).getId(),nom.getText().toString(),sec.getText().toString(),Integer.valueOf(nb.getText().toString()));
                         MyDatabase.UpdateSociete(db.getWritableDatabase(),s);
                     }
                 });
@@ -86,8 +86,8 @@ public class UpdateSActivity extends AppCompatActivity {
                 a.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        int ii=ss.get(cmb.getId()).getId();
-                        MyDatabase.DeleteSociete(db.getWritableDatabase(),ss.get(cmb.getId()).getId());
+                        int ii=ss.get(cmb.getSelectedItemPosition()).getId();
+                        MyDatabase.DeleteSociete(db.getWritableDatabase(),ii);
                         ad.remove(String.valueOf(ii));
                     }
                 });
