@@ -41,6 +41,9 @@ public class MyDatabase extends SQLiteOpenHelper {
         cv.put(col4,e.getNbEmploye());
         return db.update(table_name,cv,"ID="+e.getId(),null);
     }
+    public static long DeleteSociete(SQLiteDatabase db, int id){
+        return db.delete(table_name,"ID="+id,null);
+    }
 
 
 }
