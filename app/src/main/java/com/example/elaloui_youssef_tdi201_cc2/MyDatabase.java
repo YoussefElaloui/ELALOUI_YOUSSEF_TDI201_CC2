@@ -34,6 +34,13 @@ public class MyDatabase extends SQLiteOpenHelper {
         cv.put(col4,e.getNbEmploye());
         return db.insert(table_name,null,cv);
     }
+    public static long UpdateSociete(SQLiteDatabase db, Societe e){
+        ContentValues cv=new ContentValues();
+        cv.put(col2,e.getNom());
+        cv.put(col3,e.getSecteur());
+        cv.put(col4,e.getNbEmploye());
+        return db.update(table_name,cv,"ID="+e.getId(),null);
+    }
 
 
 }
