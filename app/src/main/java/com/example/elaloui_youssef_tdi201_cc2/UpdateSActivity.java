@@ -77,6 +77,30 @@ public class UpdateSActivity extends AppCompatActivity {
                 a.show();
             }
         });
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder a=new AlertDialog.Builder(UpdateSActivity.this);
+                a.setTitle("Delete");
+                a.setMessage("Are you sure about Deleting this item?");
+                a.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        int ii=ss.get(cmb.getId()).getId();
+                        MyDatabase.DeleteSociete(db.getWritableDatabase(),ss.get(cmb.getId()).getId());
+                        ad.remove(String.valueOf(ii));
+                    }
+                });
+                a.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+                a.show();
+
+            }
+        });
 
     }
 }
