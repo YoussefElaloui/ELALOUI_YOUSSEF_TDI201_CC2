@@ -1,5 +1,6 @@
 package com.example.elaloui_youssef_tdi201_cc2;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -26,4 +27,13 @@ public class MyDatabase extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(sql);
         onCreate(sqLiteDatabase);
     }
+    public static long AddSociete(SQLiteDatabase db, Societe e){
+        ContentValues cv=new ContentValues();
+        cv.put(col2,e.getNom());
+        cv.put(col3,e.getSecteur());
+        cv.put(col4,e.getNbEmploye());
+        return db.insert(table_name,null,cv);
+    }
+
+
 }
