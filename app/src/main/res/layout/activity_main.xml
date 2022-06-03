@@ -5,6 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
+
+    <Button
+       style="@style/btn_style"
+        android:text="@string/addS"
+        android:id="@+id/btn_addS"/>
+    <Button
+        style="@style/btn_style"
+        android:text="@string/updateS"
+        android:id="@+id/btn_updateS"/>
+    <Button
+        style="@style/btn_style"
+        android:text="@string/listS"
+        android:id="@+id/btn_listS"/>
 
 </LinearLayout>
