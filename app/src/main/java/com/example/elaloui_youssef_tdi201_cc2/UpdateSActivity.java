@@ -66,6 +66,7 @@ public class UpdateSActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         Societe s=new Societe(ss.get(cmb.getSelectedItemPosition()).getId(),nom.getText().toString(),sec.getText().toString(),Integer.valueOf(nb.getText().toString()));
                         MyDatabase.UpdateSociete(db.getWritableDatabase(),s);
+                        ss=MyDatabase.getAllSociete(db.getReadableDatabase());
                     }
                 });
                 a.setNegativeButton("No", new DialogInterface.OnClickListener() {
