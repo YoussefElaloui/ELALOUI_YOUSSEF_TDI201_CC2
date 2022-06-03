@@ -2,8 +2,11 @@ package com.example.elaloui_youssef_tdi201_cc2;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import java.util.ArrayList;
 
 public class MyDatabase extends SQLiteOpenHelper {
 
@@ -44,6 +47,11 @@ public class MyDatabase extends SQLiteOpenHelper {
     public static long DeleteSociete(SQLiteDatabase db, int id){
         return db.delete(table_name,"ID="+id,null);
     }
-
+    public static ArrayList<Societe> getAllSociete(SQLiteDatabase db){
+        Cursor c=db.rawQuery("select * from "+table_name,null);
+        ArrayList<Societe> ss=new ArrayList<>();
+        while (c.moveToNext())ss.add(new Societe(c.getInt(0),c.getString(1),c.getString(2),c.getInt(3)));
+        return ss;
+    }
 
 }
