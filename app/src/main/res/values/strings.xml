@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ELALOUI_YOUSSEF_TDI201_CC2</string>
+    <string name="addS">Ajouter une société</string>
+    <string name="updateS">Editer une société</string>
+    <string name="listS">Liste de tous les sociétes</string>
 </resources>
