@@ -13,7 +13,7 @@
         android:id="@+id/txt_nom"/>
     <EditText
         style="@style/txt_style"
-        android:hint="Tapez le secteur d'activite'"
+        android:hint="Tapez le secteur d'activite"
         android:layout_below="@id/txt_nom"
         android:id="@+id/txt_secteur"/>
     <EditText

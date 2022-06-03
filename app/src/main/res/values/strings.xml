@@ -5,4 +5,9 @@
     <string name="listS">Liste de tous les sociétes</string>
     <string name="btn_save">ENREGISTRER</string>
     <string name="btn_cancel">ANNULER</string>
+    <string name="btn_update">MODIFIER</string>
+    <string name="btn_delete">SUPPRIMER</string>
+    <string name="lbl1">Tapez le nom de la societe</string>
+    <string name="lbl2">Tapez le secteur d\'activite</string>
+    <string name="lbl3">Tapez le nombre d\'employe</string>
 </resources>

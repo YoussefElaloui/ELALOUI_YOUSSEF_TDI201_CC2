@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UpdateSActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:id="@+id/cmb"/>
+
+    <EditText
+        style="@style/txt_style"
+        android:hint="@string/lbl1"
+        android:layout_below="@id/cmb"
+        android:id="@+id/txt_nomV2"/>
+    <EditText
+        style="@style/txt_style"
+        android:hint="@string/lbl2"
+        android:layout_below="@id/txt_nomV2"
+        android:id="@+id/txt_secteur2"/>
+    <EditText
+        style="@style/txt_style"
+        android:hint="@string/lbl3"
+        android:layout_below="@id/txt_secteur2"
+        android:id="@+id/txt_nbEmployeV2"/>
+    <Button
+        style="@style/btn_styleV2"
+        android:text="@string/btn_update"
+        android:id="@+id/btn_updateNewS"
+        android:layout_below="@id/txt_nbEmployeV2"/>
+    <Button
+        style="@style/btn_styleV2"
+        android:text="@string/btn_delete"
+        android:id="@+id/btn_deleteNewS"
+        android:layout_alignBaseline="@id/btn_updateNewS"
+        android:layout_toRightOf="@id/btn_updateNewS"/>
+
+</RelativeLayout>
