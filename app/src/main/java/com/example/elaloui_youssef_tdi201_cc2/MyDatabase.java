@@ -20,7 +20,7 @@ public class MyDatabase extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String sql=String.format("create table %s(%s integer autoincrement primary key,%s text,%s text,%s integer)",table_name,col1,col2,col3,col4);
+        String sql=String.format("create table %s(%s integer primary key autoincrement,%s text,%s text,%s integer)",table_name,col1,col2,col3,col4);
         sqLiteDatabase.execSQL(sql);
     }
 

@@ -28,7 +28,7 @@
         android:layout_below="@id/txt_nbEmploye"/>
     <Button
         style="@style/btn_styleV2"
-        android:text="@string/btn_save"
+        android:text="@string/btn_cancel"
         android:id="@+id/btn_cancelNewS"
         android:layout_alignBaseline="@id/btn_addNewS"
         android:layout_toRightOf="@id/btn_addNewS"/>
