@@ -53,5 +53,11 @@ public class MyDatabase extends SQLiteOpenHelper {
         while (c.moveToNext())ss.add(new Societe(c.getInt(0),c.getString(1),c.getString(2),c.getInt(3)));
         return ss;
     }
+    public static Societe getOneSociete(SQLiteDatabase db, int id){
+        Cursor c=db.rawQuery("select * from "+table_name+" where ID="+id,null);
+        Societe s=null;
+        if(c.moveToNext())s=new Societe(c.getInt(0),c.getString(1),c.getString(2),c.getInt(3));
+        return s;
+    }
 
 }
