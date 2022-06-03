@@ -11,14 +11,17 @@
     <Button
        style="@style/btn_style"
         android:text="@string/addS"
+        android:onClick="derecTo"
         android:id="@+id/btn_addS"/>
     <Button
         style="@style/btn_style"
         android:text="@string/updateS"
+        android:onClick="derecTo"
         android:id="@+id/btn_updateS"/>
     <Button
         style="@style/btn_style"
         android:text="@string/listS"
+        android:onClick="derecTo"
         android:id="@+id/btn_listS"/>
 
 </LinearLayout>

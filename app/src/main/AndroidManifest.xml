@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ELALOUI_YOUSSEF_TDI201_CC2">
         <activity
+            android:name=".ListSActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateSActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddSActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
